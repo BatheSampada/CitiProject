@@ -6,7 +6,7 @@ const routerPath = require('./router/auth.js')
 //now using app we can access all methods of express.
 const app = express();
 
-
+//checking
 
 //environment variable
 //process.env.port will run our application on availab
