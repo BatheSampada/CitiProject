@@ -1,0 +1,22 @@
+{
+    "bracketPairColorizer.activeScopeCSS": [
+    
+        "borderStyle : solid",
+        "borderWidth : 1px",
+        "borderColor : {color}; opacity: 0.5"
+    ],
+    "bracketPairColorizer.consecutivePairColors": [
+    
+        "()",
+        "[]",
+        "{}",
+        [
+            "Gold",
+            "Orchid",
+            "LightSkyBlue"
+        ],
+        "Red"
+    ]
+    
+
+}
