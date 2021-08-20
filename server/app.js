@@ -14,36 +14,45 @@ const port= process.env.PORT || 3000 ;
 
 
 
-//middleware
-//const middleware = (req,res,next) => {
- //console.log("hello  middleware");
- //next();
-//}
-
-
 
 //mongodb connection
+var fetchRouter = require('../server/db/routes/fetch-route');
+app.use('/', fetchRouter);
+
 //dotenv.config({path: './config.env'});
-require('./db/conn');
+//require('./db/conn');
+//const findResult = await RegisteredUser.find({
+//    name: "Sampada",
+ //   password : "sam123"
+//})
 
 //to convert the json data into object 
 //app.use(express.json);
 
-//const User = require('./model/userSchema');
-
 //linking our router file to make it easy
 //app.use('/',require('./router/auth'));
-
-
-
 
 //public static path
 const static_path= path.join(__dirname,"../server/public");
  app.use(express.static(static_path));
 
- app.get('/',function(req,res){
-    res.send("hello Home page")
+
+app.get('/login',function(req,res){
+    res.render(login.html)
 }) 
+
+//login validation
+app.post('/login', async(req,res) => {
+    try{
+        const username= "sampada"
+        const password= "123";
+        Registe
+    }
+    catch(error)
+    {
+        console.log(error)
+    }
+})
 
 app.use('/',routerPath)
 
