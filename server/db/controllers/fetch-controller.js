@@ -4,7 +4,7 @@ module.exports={
     fetchData:function(req, res){
       
       fetchModel.fetchData(function(data){
-          console.log(data.Name)
+         //console.log(data.Name)
           res.send({userData:data});
       })
     }

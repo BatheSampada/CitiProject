@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 //const db = process.env.DATABASE;
 
 
-mongoose.connect("mongodb://localhost:27017/RegisteredUsers",{
+mongoose.connect("mongodb://localhost:27017/CitiProjects",{
     //callback function 
     useNewUrlParser: true ,
     useUnifiedTopology: true,

@@ -1,7 +1,7 @@
 const express = require('express');
 const dotenv=require('dotenv');
 const path = require('path');
-const routerPath = require('./router/auth.js')
+//const routerPath = require('./router/auth.js')
 
 //now using app we can access all methods of express.
 const app = express();
@@ -37,24 +37,24 @@ const static_path= path.join(__dirname,"../server/public");
  app.use(express.static(static_path));
 
 
-app.get('/login',function(req,res){
-    res.render(login.html)
-}) 
+//app.get('/login',function(req,res){
+//res.render(login.html)
+//}) 
 
 //login validation
-app.post('/login', async(req,res) => {
-    try{
-        const username= "sampada"
-        const password= "123";
-        Registe
-    }
-    catch(error)
-    {
-        console.log(error)
-    }
-})
+// app.post('/login', async(req,res) => {
+//     try{
+//         const username= "sampada"
+//         const password= "123";
+//         Registe
+//     }
+//     catch(error)
+//     {
+//         console.log(error)
+//     }
+// })
 
-app.use('/',routerPath)
+//app.use('/',routerPath)
 
 app.listen(port, () => {
     console.log(`listening to the port  at ${port} `)
